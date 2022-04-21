@@ -57,7 +57,6 @@ ball_test = Ball()
 player_test = Player()
 input_test.gameBall = ball_test
 input_test.gamePlayer = player_test
-
 input_test.getDataFromUser()
 print("Datos ingresados:")
 print("Velocidad inicial (m/s):" +input_test.gameBall.speed)

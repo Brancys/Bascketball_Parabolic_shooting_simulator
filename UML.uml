@@ -1,0 +1,47 @@
+@startuml
+class Ball{
+  radius: float
+  weight: float
+}
+class Player{
+  height:float
+  weight: float
+}
+class Basket{
+  radius: float
+}
+class Game{
+  gameBasket: Basket
+  gamePlayer: Player
+  gameBall: Ball
+  gravity: float
+  
+}
+class BasketShot{
+  shotPoints: Point
+}
+Game-->Ball
+Game-->Basket
+Game-->Player
+Player--Ball
+Player--Basket
+
+class Score{
+  gameShots: List<BasketShot>
+}
+Game-->Score
+Score-->BasketShot
+BasketShot-->Point
+class Point{
+  value: int
+}
+class twoPoint{
+
+}
+class treePoint{
+  
+}
+Point<|--twoPoint
+Point<|--treePoint
+
+@enduml

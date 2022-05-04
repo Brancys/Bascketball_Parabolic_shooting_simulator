@@ -62,7 +62,7 @@ print("Datos ingresados:")
 print("Velocidad inicial (m/s):" +input_test.gameBall.speed)
 print("Altura inicial (m):" +input_test.gamePlayer.height)
 print("Gravedad del lugar (m/s^2):" +input_test.gravity)
-print("Angulo de lanzamiento (º):" +input_test.angle)
+print("Angulo de lanzamiento (º):" +input_test.launchingAngle)
 print("Momento a revisar (s):" +input_test.gameBall.speed)
 print("Datos obtenidos correctamente")
 

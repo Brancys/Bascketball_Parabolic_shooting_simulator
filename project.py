@@ -33,7 +33,7 @@ class BasketShot:
 
 class Score:
     def __init__(self):
-        self.gameShots: List[BasketShot]
+        self.gameShots: list[BasketShot]
 
 class Game:
     def __init__(self):
@@ -45,11 +45,11 @@ class Game:
         self.t: float
      
     def getDataFromUser(self):
-        self.gameBall.speed =raw_input("Digite Velocidad inicial del balon: ")
-        self.gamePlayer.height = raw_input("Digite Altura del Jugador: ")
-        self.gravity = raw_input("Digite La gravedad del planeta: ")*-1
-        self.launchingAngle = raw_input("Digite el angulo del lanzamiento en grados: ")
-        self.t = raw_input("Digite el momento t en segundos a consultar:")
+        self.gameBall.speed = input("Digite Velocidad inicial del balon: ")
+        self.gamePlayer.height = input("Digite Altura del Jugador: ")
+        self.gravity = input("Digite La gravedad del planeta: ")*-1
+        self.launchingAngle = input("Digite el angulo del lanzamiento en grados: ")
+        self.t = input("Digite el momento t en segundos a consultar:")
         
 
 input_test = Game()

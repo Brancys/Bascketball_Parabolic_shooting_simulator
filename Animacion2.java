@@ -143,8 +143,7 @@ public final class Animacion2 extends JPanel implements Runnable {
 
         }
         //Reinicia las varibles y activa el disparo
-        
-        panelDibujo.repaint();
+        iniciarVariables();
         puedoDisparar = true;
        
     }
